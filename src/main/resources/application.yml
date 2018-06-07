@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka.provider
+
+server:
+  port: 9091
+
+eureka:
+  instance:
+    hostman: eureka.provider1
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:8761/eureka/"
+    consumer:
+      name: eureka.consumer
+    provider:
+      name: eureka.provider
