@@ -1,6 +1,12 @@
 spring:
   application:
     name: eureka.provider
+  security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: admin
 
 server:
   port: 9091
@@ -15,3 +21,4 @@ eureka:
       name: eureka.consumer
     provider:
       name: eureka.provider
+
